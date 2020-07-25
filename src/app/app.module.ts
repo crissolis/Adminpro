@@ -16,6 +16,9 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 // import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
+import { IncrementadorComponent } from './components/incrementador/incrementador.component';
+import { FormsModule } from '@angular/forms';
+import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +32,14 @@ import { RegisterComponent } from './login/register.component';
     // SidebarComponent,
     // BreadcrumbsComponent,
     RegisterComponent,
+    // GraficoDonaComponent,
+    // IncrementadorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-       PagesModule
+       PagesModule,
+       FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
