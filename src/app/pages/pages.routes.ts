@@ -9,11 +9,11 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
  const pagesRoutes: Routes = [
  { path: '', component: PagesComponent,
 	 children:[
-		{ path: 'dashboard', component:  DashboardComponent },
-        { path: 'progress', component: ProgressComponent },
-		{ path: 'grafica1', component: Graficas1Component },
-	    { path: 'account-settings', component: AccoutSettingsComponent },
-		{ path: '', redirectTo:'dashboard',pathMatch:'full' },
+		{ path: 'dashboard', component:  DashboardComponent,data:{titulo:"Dashboard"} },
+        { path: 'progress', component: ProgressComponent ,data:{titulo:"Progress"}},
+		{ path: 'grafica1', component: Graficas1Component ,data:{titulo:"Graficas"}},
+	    { path: 'account-settings', component: AccoutSettingsComponent,data:{titulo:"Configuración"} },
+		{ path: '', redirectTo:'/dashboard',pathMatch:'full',data:{titulo:"Dashboard"} },
 	 ]
 	  }
 ] ;
